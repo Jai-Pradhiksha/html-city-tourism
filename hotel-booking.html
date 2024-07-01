@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kancheepuram</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/logo.png">
+
+    <style>
+        .site-footer {
+            flex-shrink: 0;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body style="background-color: blanchedalmond;">
+
+<header>
+    <img src="images/logo.png" alt="City Logo" style="width: 100px;">
+    <h1>Welcome to Kancheepuram</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="heritage.html">Heritage</a>
+    <a href="hotel-booking.html">Hotel Booking</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+
+<form action="" method="post" style="text-align: center">
+    
+    <label for="full_name">Full Name:</label>
+    <input type="text" id="full_name" name="full_name" required><br><br>
+    
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+    
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+    
+    <label for="check_in_date">Check-in Date:</label>
+    <input type="date" id="check_in_date" name="check_in_date" required><br><br>
+    
+    <label for="check_out_date">Check-out Date:</label>
+    <input type="date" id="check_out_date" name="check_out_date" required><br><br>
+    
+    <label for="adults">Number of Adults:</label>
+    <input type="number" id="adults" name="adults" required><br><br>
+    
+    <label for="children">Number of Children:</label>
+    <input type="number" id="children" name="children" required><br><br>
+    
+    <label>Room Type:</label><br>
+    <input type="checkbox" id="single_room" name="room_type[]" value="Single Room">
+    <label for="single_room"> Single Room</label><br>
+    
+    <input type="checkbox" id="double_room" name="room_type[]" value="Double Room">
+    <label for="double_room"> Double Room</label><br>
+    
+    <input type="checkbox" id="suite" name="room_type[]" value="Suite">
+    <label for="suite"> Suite</label><br><br>
+    <label for="how_did_you_hear">How did you hear about us?</label>
+    <select id="how_did_you_hear" name="how_did_you_hear" required>
+       <option value="">Please select</option>
+       <option value="Internet search">Internet search</option>
+       <option value="Recommendation">Recommendation</option>
+       <option value="Advertisement">Advertisement</option>
+       <option value="Other">Other</option>
+    </select><br><br>
+    
+    <label for="comments">Any other comments or feedback?</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+    
+    <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+    <label for="terms_conditions"> I agree to the terms and conditions.</label><br><br>
+    
+    <input type="submit" value="Submit">
+ </form>
+ 
+
+<footer class="site-footer">
+    &copy; 2024 Kancheepuram Tourism. All rights reserved.
+</footer>
+
+</body>
+</html>
